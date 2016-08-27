@@ -1,0 +1,27 @@
+{
+  "name": "star-rating-marko",
+  "version": "0.1.0",
+  "description": "star rating component in marko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomed/star-rating-marko.git"
+  },
+  "keywords": [
+    "star rating",
+    "marko component",
+    "marko"
+  ],
+  "author": "Yoni Medoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yomed/star-rating-marko/issues"
+  },
+  "homepage": "https://github.com/yomed/star-rating-marko#readme",
+  "peerDependencies": {
+    "marko": "^3.10.0"
+  }
+}
