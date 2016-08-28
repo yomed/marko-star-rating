@@ -13,9 +13,13 @@ function buildModel(input) {
 
     stars.forEach(function (val, i) {
         starClass = 'star-rating-marko__icon';
+        starType = '';
+
         if (score >= i + 1) {
             starType = 'full';
-        } else if (score - i < 1 && score - i > 0) {
+        }
+
+        if (score - i < 1 && score - i > 0) {
             starType = 'quarter';
             if (scoreString.includes('.75')) {
                 starType = 'three-quarters';
@@ -23,10 +27,12 @@ function buildModel(input) {
                 starType = 'half';
             }
         }
+
         if (starType) {
             starClass += ' star-rating-marko__icon--' + starType;
             starClass += ' star-rating-marko__icon--active';
         }
+
         stars[i] = starClass;
     });
 
