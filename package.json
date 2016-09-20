@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "lint": "eslint . --ignore-pattern *.marko.js",
-    "test": "mocha test --require mocha-setup.js"
+    "test": "mocha --require mocha-setup.js",
+    "build": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
