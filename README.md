@@ -24,6 +24,6 @@ Set the color for both inactive and active stars:
 ```
 
 Invoke the component from your template:
-```html
-<star-rating-marko score=3.5/>
+```xml
+<star-rating-marko score=3.5 />
 ```

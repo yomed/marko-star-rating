@@ -2,9 +2,10 @@
   "name": "star-rating-marko",
   "version": "1.0.1",
   "description": "star rating component in marko",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ignore-pattern *.marko.js",
+    "test": "mocha test --require mocha-setup.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,14 @@
   "homepage": "https://github.com/yomed/star-rating-marko#readme",
   "peerDependencies": {
     "marko": "^3.10.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-yomed": "github:yomed/eslint-config-yomed",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.5.0",
+    "marko": "^3.10.1",
+    "mocha": "^3.0.2"
   }
 }

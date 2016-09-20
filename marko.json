@@ -1,5 +1,5 @@
 {
     "<star-rating-marko>": {
-        "renderer": "./index.js"
+        "renderer": "./src"
     }
 }
