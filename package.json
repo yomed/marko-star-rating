@@ -1,6 +1,6 @@
 {
   "name": "star-rating-marko",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "star rating component in marko",
   "main": "./src/index.js",
   "scripts": {
