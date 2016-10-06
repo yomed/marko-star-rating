@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/yomed/star-rating-marko#readme",
   "peerDependencies": {
-    "marko": "^3.10.0"
+    "marko": "^3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.5.0",
+    "eslint": "^3.7.1",
     "eslint-config-yomed": "github:yomed/eslint-config-yomed",
-    "jquery": "^3.1.0",
-    "jsdom": "^9.5.0",
-    "marko": "^3.10.1",
-    "mocha": "^3.0.2"
+    "jquery": "^3.1.1",
+    "jsdom": "^9.6.0",
+    "marko": "^3.11.2",
+    "mocha": "^3.1.0"
   }
 }
