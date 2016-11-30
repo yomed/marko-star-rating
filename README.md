@@ -30,3 +30,6 @@ filled in according to the score rounded to the nearest quarter.
 ```xml
 <star-rating-marko score=3.5 />
 ```
+
+## Example
+![example screenshot](example.png?raw=true)
