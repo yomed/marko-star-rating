@@ -32,4 +32,4 @@ filled in according to the score rounded to the nearest quarter.
 ```
 
 ## Example
-![example screenshot](example.png?raw=true)
+<img src="example.png?raw=true" width="199" alt="example screenshot" />
