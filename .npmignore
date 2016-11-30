@@ -1,0 +1,5 @@
+test/
+.eslintrc.json
+.travis.yml
+example.png
+mocha-setup.js
