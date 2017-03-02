@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/yomed/star-rating-marko#readme",
   "peerDependencies": {
-    "marko": "^3"
+    "marko": "^4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -33,7 +33,7 @@
     "eslint-config-yomed": "github:yomed/eslint-config-yomed",
     "jquery": "^3.1.1",
     "jsdom": "^9.10.0",
-    "marko": "^3",
+    "marko": "^4",
     "mocha": "^3.2.0"
   }
 }
