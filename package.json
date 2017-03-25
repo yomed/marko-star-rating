@@ -30,7 +30,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.15.0",
-    "eslint-config-yomed": "github:yomed/eslint-config-yomed",
+    "eslint-config-yomed": "^1.0.1",
     "jquery": "^3.1.1",
     "jsdom": "^9.10.0",
     "marko": "^4",
