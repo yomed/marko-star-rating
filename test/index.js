@@ -1,12 +1,9 @@
 'use strict';
 
-var $ = require('jquery');
+require('marko/node-require').install();
 var expect = require('chai').expect;
+var cheerio = require('cheerio');
 var renderer = require('../src');
-
-function getDOM(html) {
-    return $('<wrapper>' + html + '</wrapper>');
-}
 
 function createScenario(score, quarter, half, threeQuarters, full) {
     return {
@@ -34,8 +31,8 @@ describe('star-rating-marko', function () {
     scenarios.forEach(function (scenario) {
         it('renders correctly with score=' + scenario.score, function () {
             renderer({score: scenario.score}, function (err, html) {
-                var $dom = getDOM(html);
-                var $root = $('.star-rating-marko', $dom);
+                var $ = cheerio.load(html);
+                var $root = $('.star-rating-marko');
                 var $stars = $('.star-rating-marko__icon', $root);
                 var $quarter = $('.star-rating-marko__icon--quarter.star-rating-marko__icon--active', $root);
                 var $half = $('.star-rating-marko__icon--half.star-rating-marko__icon--active', $root);

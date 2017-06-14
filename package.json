@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "lint": "eslint . --ignore-pattern *.marko.js",
-    "test": "mocha --require mocha-setup.js",
+    "test": "mocha",
     "build": "npm run lint && npm run test"
   },
   "repository": {
@@ -29,10 +29,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "cheerio": "^1.0.0-rc.1",
     "eslint": "^3.15.0",
     "eslint-config-yomed": "^1.0.1",
-    "jquery": "^3.1.1",
-    "jsdom": "^9.10.0",
     "marko": "^4",
     "mocha": "^3.2.0"
   }
