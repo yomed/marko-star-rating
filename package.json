@@ -3,6 +3,11 @@
   "version": "2.1.0",
   "description": "star rating component in marko",
   "main": "./src/index.js",
+  "files": [
+    "src/",
+    "browser.json",
+    "marko.json"
+  ],
   "scripts": {
     "lint": "eslint . --ignore-pattern *.marko.js",
     "test": "mocha",
