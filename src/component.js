@@ -1,8 +1,6 @@
 'use strict';
 
-var template = require('./template.marko');
-
-function buildModel(input) {
+function onInput(input) {
     input = input || {};
     input.score = input.score || 0;
     var score = (Math.round(input.score * 4) / 4).toFixed(2); // round to quarter
@@ -41,6 +39,6 @@ function buildModel(input) {
     };
 }
 
-module.exports = function render(input, out) {
-    template.render(buildModel(input), out);
+module.exports = {
+    onInput: onInput
 };
