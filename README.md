@@ -20,14 +20,14 @@ Set the color for both inactive and active stars:
 }
 
 .star-rating-marko__icon--active:before {
-    color: yellow;
+    color: purple;
 }
 ```
 
 Invoke the component from your template with a score from 0 to 5.
 The component will render 5 stars using the html star entity,
 filled in according to the score rounded to the nearest quarter.
-```xml
+```marko
 <star-rating-marko score=3.5 />
 ```
 
