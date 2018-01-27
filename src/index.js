@@ -12,7 +12,7 @@ function buildModel(input) {
     var starType;
 
     stars.forEach(function (val, i) {
-        starClass = 'star-rating-marko__icon';
+        starClass = 'star-rating__icon';
         starType = '';
 
         if (score >= i + 1) {
@@ -29,8 +29,8 @@ function buildModel(input) {
         }
 
         if (starType) {
-            starClass += ' star-rating-marko__icon--' + starType;
-            starClass += ' star-rating-marko__icon--active';
+            starClass += ' star-rating__icon--' + starType;
+            starClass += ' star-rating__icon--active';
         }
 
         stars[i] = starClass;

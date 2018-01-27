@@ -1,5 +1,5 @@
 {
-  "name": "star-rating-marko",
+  "name": "marko-star-rating",
   "version": "2.3.1",
   "description": "star rating component in marko",
   "main": "./src/index.js",
@@ -19,8 +19,6 @@
   },
   "keywords": [
     "star rating",
-    "marko",
-    "marko component",
     "marko-component"
   ],
   "author": "Yoni Medoff",
@@ -35,9 +33,9 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.1",
-    "eslint": "^4.9.0",
+    "eslint": "^4.16.0",
     "eslint-config-yomed": "^1.2.0",
-    "marko": "^4.5.2",
-    "mocha": "^4.0.1"
+    "marko": "^4.7.5",
+    "mocha": "^5.0.0"
   }
 }

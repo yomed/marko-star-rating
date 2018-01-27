@@ -1,22 +1,22 @@
-.star-rating-marko__icon {
+.star-rating__icon {
     position: relative;
 }
 
-.star-rating-marko__icon--active:before {
+.star-rating__icon--active:before {
     content: '\2605';
     position: absolute;
     left: 0;
     overflow: hidden;
 }
 
-.star-rating-marko__icon--quarter:before {
+.star-rating__icon--quarter:before {
     width: 40%;
 }
 
-.star-rating-marko__icon--half:before {
+.star-rating__icon--half:before {
     width: 52%;
 }
 
-.star-rating-marko__icon--three-quarters:before {
+.star-rating__icon--three-quarters:before {
     width: 65%;
 }
