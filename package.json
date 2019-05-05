@@ -31,11 +31,11 @@
     "marko": "^4"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.1",
-    "eslint": "^4.16.0",
-    "eslint-config-yomed": "^1.2.0",
-    "marko": "^4.7.5",
-    "mocha": "^5.0.0"
+    "eslint": "^5.16.0",
+    "eslint-config-yomed": "^1.4.0",
+    "marko": "^4.16.13",
+    "mocha": "^6.1.4"
   }
 }

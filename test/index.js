@@ -1,21 +1,13 @@
-'use strict';
-
 require('marko/node-require').install();
-var expect = require('chai').expect;
-var cheerio = require('cheerio');
-var renderer = require('../src');
+const expect = require('chai').expect;
+const cheerio = require('cheerio');
+const renderer = require('../src');
 
 function createScenario(score, quarter, half, threeQuarters, full) {
-    return {
-        score: score,
-        quarter: quarter,
-        half: half,
-        threeQuarters: threeQuarters,
-        full: full
-    };
+    return { score, quarter, half, threeQuarters, full };
 }
 
-var scenarios = [
+const scenarios = [
     createScenario(5, 0, 0, 0, 5),
     createScenario(4.8, 0, 0, 1, 4),
     createScenario(4.2, 1, 0, 0, 4),
@@ -30,14 +22,14 @@ var scenarios = [
 describe('marko-star-rating', function () {
     scenarios.forEach(function (scenario) {
         it('renders correctly with score=' + scenario.score, function () {
-            renderer({score: scenario.score}, function (err, html) {
-                var $ = cheerio.load(html);
-                var $root = $('.star-rating');
-                var $stars = $('.star-rating__icon', $root);
-                var $quarter = $('.star-rating__icon--quarter.star-rating__icon--active', $root);
-                var $half = $('.star-rating__icon--half.star-rating__icon--active', $root);
-                var $threeQuarters = $('.star-rating__icon--three-quarters.star-rating__icon--active', $root);
-                var $full = $('.star-rating__icon--full.star-rating__icon--active', $root);
+            renderer({ score: scenario.score }, function (err, renderResult) {
+                const $ = cheerio.load(renderResult.out.stream.str);
+                const $root = $('.star-rating');
+                const $stars = $('.star-rating__icon', $root);
+                const $quarter = $('.star-rating__icon--quarter.star-rating__icon--active', $root);
+                const $half = $('.star-rating__icon--half.star-rating__icon--active', $root);
+                const $threeQuarters = $('.star-rating__icon--three-quarters.star-rating__icon--active', $root);
+                const $full = $('.star-rating__icon--full.star-rating__icon--active', $root);
 
                 expect($root.length).to.equal(1);
                 expect($stars.length).to.equal(5);
