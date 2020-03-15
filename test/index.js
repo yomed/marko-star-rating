@@ -23,7 +23,7 @@ describe('marko-star-rating', function () {
     scenarios.forEach(function (scenario) {
         it('renders correctly with score=' + scenario.score, function () {
             renderer({ score: scenario.score }, function (err, renderResult) {
-                const $ = cheerio.load(renderResult.out.stream.str);
+                const $ = cheerio.load(renderResult.out.stream._content);
                 const $root = $('.star-rating');
                 const $stars = $('.star-rating__icon', $root);
                 const $quarter = $('.star-rating__icon--quarter.star-rating__icon--active', $root);

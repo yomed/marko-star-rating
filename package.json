@@ -33,9 +33,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.8.0",
     "eslint-config-yomed": "^1.4.0",
-    "marko": "^4.16.13",
-    "mocha": "^6.1.4"
+    "marko": "^4.19.7",
+    "mocha": "^7.1.0"
   }
 }
